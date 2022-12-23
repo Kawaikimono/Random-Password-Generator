@@ -15,7 +15,7 @@ function writePassword() {
   passwordText.value = password;
 }
 
-function x() {
+function generatePassword() {
   let passwordLength = parseInt(
     prompt(
       "Please type how many characters between 8 and 128 you want for your password"
@@ -78,38 +78,16 @@ function x() {
     alert("Must choose at least one condition");
     x();
   } else {
-    // var thingsRandom = availableCharacters[Math.floor(Math.random()*passwordLength.length)]
     
-    console.log([Math.floor(Math.random() * passwordLength.length)]);
-    // console.log(thingsRandom);
-    // for (let i = 0; i =passwordLength; i++) {
-    // const element = array[];
-
-    // var index = Math.floor(Math.random() * opti.length);
-    // var computerChoice = options[index];
-  }
-}
-
-// var cats =  ["Pluffy", "Kitty", "Lily"];
-//     var text = "";
-//     var i;
-
-//     var catRandom = cats[Math.floor(Math.random()*cats.length)];
-//     j = Math.floor(Math.random()*cats.length)
-//     for (i = 0; i < cats.length; i ++) {
-//         text += cats[j] + " is my favourite cat" + "<br>";
-// }
-
-// }
-
-// Math.random;
-
-// //once button is pushed password criteria is asked in popup
-// // length 8-128
-// //promts for: lowercase, uppercase,numeric,& special characters
-// // each input must be validated and one character type must be selected
-// // password is generated to match criteria and displayed on in page
+    console.log(availableCharacters[Math.floor(Math.random() * availableCharacters.length)]);
+    var randomPass=""
+    for (let i = 0; i < passwordLength; i++) {
+    element = availableCharacters[Math.floor(Math.random() * availableCharacters.length)];
+    randomPass+=element
+    console.log(randomPass)
+    
+  }return randomPass
+}}
 
 // // Add event listener to generate button
-// generateBtn.addEventListener("click", writePassword);
-generateBtn.addEventListener("click", x);
+generateBtn.addEventListener("click", writePassword);
