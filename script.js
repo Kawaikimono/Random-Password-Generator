@@ -30,14 +30,14 @@ function generatePassword() {
     alert(
       "Password must be greater than 8. Please Choose a number between 8 and 128"
     );
-    x();
+    return generatePassword();
     console.log(passwordLength);
   }
   if (passwordLength > 128) {
     alert(
       "Password must be less than 128. Please Choose a number between 8 and 128"
     );
-    x();
+    return generatePassword();
     console.log(passwordLength);
   }
   var getLowerCase = confirm(
