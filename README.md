@@ -14,7 +14,7 @@ This project was to generate code on an existing website to make a random passwo
 
 ## Depolyed Viewing
 
-Asignment link: ttps://kawaikimono.github.io/Random-Password-Generator/
+Asignment link: https://kawaikimono.github.io/Random-Password-Generator/
 
 [Website preview](./Preview.png)
 
