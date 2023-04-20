@@ -1,4 +1,4 @@
-# Lesson-3-Challenge
+# Random-Password-Generator
 
 ## Description
 ```
